@@ -1,0 +1,48 @@
+.main_container {
+  height: 430px;
+  padding: 10px;
+  flex: 1 1 250px;
+  border: 1px solid #DAA520;
+  background-color: #F3F3F3;
+}
+
+.image {
+  object-fit: cover;
+  height: 60%;
+  width: 100%;
+}
+
+.info_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  height: 40%;
+  gap: 5px;
+  padding: 10px;
+  position: relative;
+
+  & .title, .category, .description {
+    text-align: left;
+  }
+
+  & .title {
+    font-size: 14px;
+  }
+
+  & .category {
+    font-size: 10px;
+    color: #DAA520;
+  }
+
+  & .description {
+    font-size: 12px;
+  }
+
+  & .price {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #F3F3F3;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #DAA520;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1050px) {
+    .main_container {
+      width: calc(100% - 40px);
+      margin: 0 auto;
+    }
+}
