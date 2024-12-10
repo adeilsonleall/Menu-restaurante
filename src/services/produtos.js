@@ -7,3 +7,9 @@ export const filterEntries = () => {
 export const filterProducts = (category) => {
     return produtos.filter((produto) => produto.categoria === category);
 }
+
+export const shearchProduct = (typedText) => {
+    return produtos.filter((produto) =>
+        produto.nome.toLowerCase().includes(typedText.toLowerCase())
+    )
+}

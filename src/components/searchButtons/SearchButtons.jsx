@@ -5,9 +5,7 @@ import Image from 'next/image';
 import { buttonsCategory } from '@/data/buttons';
 import { useState } from 'react';
 
-export default function SearchButtons({selectedCategory}) {
-  
-  const [activeButton, setActiveButton] = useState('Entradas');
+export default function SearchButtons({selectedCategory, activeButton, setActiveButton}) {
 
   const handleClick = (bt) => {  
     setActiveButton(bt);
